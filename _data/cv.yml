@@ -1,0 +1,65 @@
+# CV content for /cv/ page (data-driven)
+- title: "Appointments"
+  type: time_table
+  contents:
+    - title: "Ph.D. Candidate"
+      institution: "University of Wisconsin-Madison"
+      year: "Expected 2026"
+      description:
+        - "Research: gene regulatory networks, scRNAseq trajectory inference, reproducible pipelines."
+
+- title: "Education"
+  type: time_table
+  contents:
+    - title: "Ph.D. in Genetics"
+      institution: "University of Wisconsin–Madison"
+      description:
+        - "Dissertation: Gene regulatory network inference from scRNA-seq and multi-omics."
+        - "Advisors: Roy Lab (WID)."
+
+- title: "Research Interests"
+  type: nested_list
+  contents:
+    - title: "Single-cell omics"
+      items:
+        - "scRNA-seq; RNA velocity; lineage reconstruction."
+    - title: "GRN inference"
+      items:
+        - "MERLIN, MERLIN+P+TFA; evaluation on retinal organoids (NRL knockout → THRB2)."
+    - title: "Reproducibility"
+      items:
+        - "Containerized workflows; HPC; versioned datasets."
+
+- title: "Selected Projects"
+  type: time_table
+  contents:
+    - title: "MERLIN+P+TFA"
+      institution: "Roy Lab, University of Wisconsin–Madison"
+      description:
+        - "Implemented and validated GRN inference using priors and TF activity estimates."
+    - title: "Transcriptional and Signaling Control of Maize Autophagy"
+      institution: "Roy & Otegui Labs, University of Wisconsin–Madison"
+      description:
+        - "Identified transcriptional modules and prioritized regulators driving canonical and noncanonical autophagy responses."
+        - "Integrated transcriptomic, proteomic, metabolomic, and ionomic data to construct genome-scale regulatory networks underlying compensatory mechanisms of autophagy in maize."
+
+    - title: "Regulatory Networks Governing Rod-to-Cone Conversion in Human Retinal Organoids"
+      institution: "Roy & Gamm Labs, University of Wisconsin–Madison"
+      description:
+        - "Generated human retinal organoids from wild-type, patient-derived, and THRB2-overexpressing NRL−/− lines to investigate photoreceptor fate reprogramming."
+        - "Identified transcriptional regulators driving conversion of rod to red-green cone cell types from gene modules and network inference from single-cell RNA-seq data."
+        - "Prioritized key regulatory factors underlying cone specification and maturation relevant to retinal disease and regeneration."
+
+- title: "Skills"
+  type: list
+  contents:
+    - "Programming: Python, R, MATLAB, Bash, AWK"
+    - "Data: scRNA-seq, RNA-seq, proteomics, metabolomics"
+    - "Tooling: Snakemake, Docker, Git/GitHub, HPC (HTCondor)"
+    - "Viz: matplotlib, ggplot2, seaborn, Illustrator"
+    - "Cloud/HPC: Linux, cluster job arrays, environment modules"
+
+- title: "Publications"
+  type: list
+  contents:
+    - "See Publications page."
