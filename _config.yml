@@ -1,0 +1,101 @@
+# AcademicPages-inspired Jekyll config for a bioinformaticist
+# Docs: https://academicpages.github.io/
+
+title: "Sunnie Grace McCalla"
+name: "Sunnie Grace McCalla"
+description: "Bioinformatics • Gene Regulatory Networks • Single-cell  • Multi-Omics"
+url: ""            # e.g., https://sgmccalla.github.io
+baseurl: ""        # e.g., /my-site if publishing to a project page
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jemoji
+  - jekyll-scholar
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+author:
+  name: "Sunnie Grace McCalla"
+  avatar: "/assets/img/avatar.jpg"
+  bio: "Bioinformatics researcher. scRNA-seq, GRNs, reproducible pipelines."
+  location: "USA"
+  employer: "—"
+  email: ""
+  uri: ""
+  github: "sgmccalla"
+  linkedin: "sunnie-grace-mccalla-018804128"
+  google_scholar: "giCNkaMAAAAJ"
+  orcid: ""
+  twitter: ""
+  mastodon: ""
+
+social:
+  github: "sgmccalla"
+  linkedin: "sunnie-grace-mccalla-018804128"
+  google_scholar: "giCNkaMAAAAJ"
+
+minimal_mistakes_skin: "default"
+locale: "en-US"
+search: true
+breadcrumbs: true
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  talks:
+    output: true
+    permalink: /talks/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      related: true
+      share: true
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: single
+      author_profile: true
+
+scholar:
+  style: apa
+  locale: en
+  sort_by: year
+  order: descending
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bibliography
+  details_link: "Details"
+  query: "@*"
+
+permalink: /:categories/:title/
