@@ -17,7 +17,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"      # pagination for blog/index
   gem "jekyll-sitemap"       # automatic sitemap.xml
   gem "jekyll-feed"          # RSS feed
-  gem "jemoji"               # GitHub-style emojis
+  gem "jemoji"
 end
 
 # Needed for serving locally with Ruby 3+
