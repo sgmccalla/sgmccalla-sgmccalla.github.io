@@ -24,7 +24,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
-          enablement: true
+          enablement: true   # ← This is the flag you’re asking about
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
