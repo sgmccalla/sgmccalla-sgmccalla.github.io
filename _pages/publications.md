@@ -5,4 +5,4 @@ layout: single
 author_profile: true
 ---
 
-{% bibliography template=bibliography %}
+{% bibliography %}
