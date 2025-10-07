@@ -1,0 +1,33 @@
+{%- comment -%}
+Minimal bibliography template for jekyll-scholar.
+Usage: {% raw %}{% bibliography %}{% endraw %}
+{%- endcomment -%}
+{% for entry in bibliography %}
+  <div class="bib-entry">
+    <p>
+      <strong>{{ entry.title }}</strong><br>
+      <span class="bib-authors">{{ entry.author }}</span>
+      {% if entry.journal %}
+        <em> — {{ entry.journal }}</em>
+      {% elsif entry.container-title %}
+        <em> — {{ entry.container-title }}</em>
+      {% endif %}
+      {% if entry.year %} ({{ entry.year }}){% endif %}.
+    </p>
+    <p class="bib-links">
+      {% if entry.DOI or entry.doi %}
+        <a href="https://doi.org/{{ entry.DOI | default: entry.doi }}" target="_blank">DOI</a>
+      {% endif %}
+      {% if entry.URL or entry.url %}
+        {% assign url = entry.URL | default: entry.url %}
+        {% if url %} · <a href="{{ url }}" target="_blank">Link</a>{% endif %}
+      {% endif %}
+      {% if entry.pdf %}
+        · <a href="{{ entry.pdf }}" target="_blank">PDF</a>
+      {% endif %}
+      {% if entry.eprint %}
+        · <a href="{{ entry.eprint }}" target="_blank">Preprint</a>
+      {% endif %}
+    </p>
+  </div>
+{% endfor %}
