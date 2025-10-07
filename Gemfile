@@ -11,12 +11,13 @@ gem "jekyll", "~> 4.3"
 # gem "minimal-mistakes-jekyll", "~> 4.24"
 
 group :jekyll_plugins do
+  gem "jekyll-remote-theme"  
+  gem "jekyll-include-cache"
   gem "jekyll-scholar"       # for publications from BibTeX
   gem "jekyll-paginate"      # pagination for blog/index
   gem "jekyll-sitemap"       # automatic sitemap.xml
   gem "jekyll-feed"          # RSS feed
   gem "jemoji"               # GitHub-style emojis
-  gem "jekyll-include-cache" # recommended by Minimal Mistakes for performance
 end
 
 # Needed for serving locally with Ruby 3+
