@@ -5,7 +5,7 @@ title: "Sunnie Grace McCalla"
 name: "Sunnie Grace McCalla"
 description: "Bioinformatics • Gene Regulatory Networks • Single-cell RNAseq • Multi-Omics"
 url: "https://sgmccalla.github.io"
-baseurl: "https://sgmccalla.github.io"
+baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
