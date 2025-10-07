@@ -5,11 +5,11 @@ header:
   overlay_color: "#000"
   overlay_filter: 0.5
   overlay_image: /assets/img/hero.jpg
-  actions:
-    - label: "Publications"
-      url: "{{ '/publications/' | relative_url }}"
-    - label: "Projects"
-      url: "{{ '/projects/' | relative_url }}"
+#  actions:
+#    - label: "Publications"
+#      url: "{{ '/publications/' | relative_url }}"
+#    - label: "Projects"
+#      url: "{{ '/projects/' | relative_url }}"
 excerpt: "Bioinformatics • Gene Regulatory Networks • Single-cell RNAseq"
 classes: "landing"
 ---
