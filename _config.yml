@@ -16,12 +16,13 @@ kramdown:
 highlighter: rouge
 
 plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-scholar
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
   - jemoji
-  - jekyll-scholar
-  - jekyll-include-cache
 
 paginate: 5
 paginate_path: "/blog/page:num/"
