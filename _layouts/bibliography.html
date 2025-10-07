@@ -1,7 +1,3 @@
-{%- comment -%}
-Minimal bibliography template for jekyll-scholar.
-Usage: {% raw %}{% bibliography %}{% endraw %}
-{%- endcomment -%}
 {% for entry in bibliography %}
   <div class="bib-entry">
     <p>
@@ -16,17 +12,17 @@ Usage: {% raw %}{% bibliography %}{% endraw %}
     </p>
     <p class="bib-links">
       {% if entry.DOI or entry.doi %}
-        <a href="https://doi.org/{{ entry.DOI | default: entry.doi }}" target="_blank">DOI</a>
+        <a href="https://doi.org/{{ entry.DOI | default: entry.doi }}" target="_blank" rel="noopener">DOI</a>
       {% endif %}
-      {% if entry.URL or entry.url %}
-        {% assign url = entry.URL | default: entry.url %}
-        {% if url %} · <a href="{{ url }}" target="_blank">Link</a>{% endif %}
+      {% assign url = entry.URL | default: entry.url %}
+      {% if url %}
+        · <a href="{{ url }}" target="_blank" rel="noopener">Link</a>
       {% endif %}
       {% if entry.pdf %}
-        · <a href="{{ entry.pdf }}" target="_blank">PDF</a>
+        · <a href="{{ entry.pdf }}" target="_blank" rel="noopener">PDF</a>
       {% endif %}
       {% if entry.eprint %}
-        · <a href="{{ entry.eprint }}" target="_blank">Preprint</a>
+        · <a href="{{ entry.eprint }}" target="_blank" rel="noopener">Preprint</a>
       {% endif %}
     </p>
   </div>
