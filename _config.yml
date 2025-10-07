@@ -59,6 +59,9 @@ collections:
     output: true
     permalink: /talks/:title/
 
+include:
+  - _pages
+  
 defaults:
   - scope:
       path: ""
